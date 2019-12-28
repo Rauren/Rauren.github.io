@@ -11,6 +11,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
+  border-bottom: 1px solid #7c7c7c;
 }
 
 #Accueil {
@@ -195,4 +196,9 @@ body {
 .Mode:hover {
   background:linear-gradient(to bottom, rgb(85, 65, 210) 5%, rgb(85, 65, 210) 100%);
 	background-color:rgb(85, 65, 210);
+}
+
+@media screen and (max-width: 700px) {
+  ul.url li.right, 
+  ul.url li {float: none;}
 }
