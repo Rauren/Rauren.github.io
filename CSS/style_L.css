@@ -198,7 +198,27 @@ body {
 	background-color:rgb(85, 65, 210);
 }
 
-@media screen and (max-width: 700px) {
-  ul.url li.right, 
-  ul.url li {float: none;}
+@media screen and (max-width: 800px) { 
+  
+  .url li {
+    float: none;
+  }
+
+  .col {
+    vertical-align: top;
+    width: 100%;
+    display:inline-block;
+    padding: 0 18px;
+  }
+
+  .page {
+    padding-top: 300px;
+    padding-bottom: 0px;
+  }
+  
+  .email {
+    float: left;
+    text-align: left;
+  }
+  
 }
