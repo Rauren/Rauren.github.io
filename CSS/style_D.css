@@ -191,6 +191,43 @@ body {
 	background-color:rgb(85, 65, 210);
 }
 
+#scrollUp{
+  border-radius:3px;
+  padding:10px;
+  font-size:15px;
+  text-align:center;
+  color:#fff;
+  background:rgba(44, 98, 197, 0.5);
+  position:fixed;
+  right:20px;
+  opacity:1;
+  z-index:99999;
+  transition:all ease-in 0.2s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+
+#scrollUp.invisible {
+  bottom:-35px;
+  opacity:0;
+  transition:all ease-in 1s;
+}
+
+#scrollUp.visible{
+  bottom:20px;
+  opacity: 1;
+}
+
+#scrollUp:before {
+  content: "\25b2"; 
+}
+
+#scrollUp:hover {
+  background:rgba(52, 113, 226, 1);
+  transition:all ease-in 0.2s;
+}
+
 @media screen and (max-width: 800px) { 
   
   .url li {
@@ -240,5 +277,5 @@ body {
     right: 0;
     top: 0;
   }
-  
+
 }
